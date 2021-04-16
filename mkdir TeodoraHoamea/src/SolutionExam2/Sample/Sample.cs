@@ -6,33 +6,10 @@ using RepositoryPattern;
 
 namespace Sample
 {
-    public class Sample : IDataRepository, IUnitOfWork
+    public class Sample 
     {
-        private DataContext dataContext = new DataContext();
-        
-        public void Commit()
-        {
-            dataContext.SaveChanges();
-        }
-
-        public void Delete<Sample>(Sample entity) where Sample : class
-        {
-            throw new NotImplementedException();
-        }
-
-        public TEntity Insert<TEntity>(TEntity entity) where TEntity : class
-        {
-            throw new NotImplementedException();
-        }
-
-        public IQueryable<TEntity> Query<TEntity>() where TEntity : class
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update<TEntity>(TEntity entity) where TEntity : class
-        {
-            throw new NotImplementedException();
-        }
+        public Guid Id { get; private set; }
+        public string DnaSequence { get; private set; }
+        public DateTime AnalysisTime { get; private set; }
     }
 }

@@ -9,30 +9,29 @@ namespace RepositoryPattern
 {
     public class DataContext : DbContext, IUnitOfWork, IDataRepository
     {
-        public SampleModel sample { get; protected set; }
         public void Commit()
         {
             SaveChanges();
         }
 
-        public void Delete<TEntity>(TEntity entity) where TEntity : class
+        public void Delete<Sample>(Sample sapmle) where Sample : class
         {
-            Delete(entity);
+            Delete(sapmle);
         }
 
-        public TEntity Insert<TEntity>(TEntity entity) where TEntity : class
+        public Sample Insert<Sample>(Sample sample) where Sample : class
         {
-            return Insert(entity);
+            return Insert(sample);
         }
 
-        public IQueryable<TEntity> Query<TEntity>() where TEntity : class
+        public IQueryable<Sample> Query<Sample>() where Sample : class
         {
-            return Set<TEntity>();
+            return Set<Sample>();
         }
 
-        void IDataRepository.Update<TEntity>(TEntity entity)
+        void IDataRepository.Update<Sample>(Sample sample)
         {
-           Update(entity);
+           Update(sample);
         }
     }
 }
