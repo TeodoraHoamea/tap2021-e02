@@ -8,13 +8,13 @@ namespace IsValidSequence
     {
         public static int ValidateDnaSequence(this String dna)
         {
-            for(int i = 0; i<dna.Length; i++)
+            for(int i = 0; i < dna.Length; i++)
             {
-                if (!dna[i].Equals('A') || !dna[i].Equals('C') || !dna[i].Equals('G') || !dna[i].Equals('T'))
+                if (!dna[i].Equals('A') && !dna[i].Equals('C') && !dna[i].Equals('G') && !dna[i].Equals('T'))
                     throw new InvalidOperationException("The DNA MUST conatain JUST characters A, C, D, T!!!!");
             }
             
-            return dna.Split(new char[] { ' ', '.', '?' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            return dna.Length;
         }
     }
 }
