@@ -4,7 +4,8 @@ using System.Text;
 
 namespace RepositoryPattern
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
+        void Commit();
     }
 }
