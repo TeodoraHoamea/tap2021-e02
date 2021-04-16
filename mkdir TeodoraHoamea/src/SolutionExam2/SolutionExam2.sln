@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsValidSequence", "IsValidSequence\IsValidSequence.csproj", "{6E42C441-6664-4F4F-9E22-9EDEB552A168}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIsValidSequence", "TestIsValidSequence\TestIsValidSequence.csproj", "{7C70486C-7778-47D1-977A-AA4821E04E36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6E42C441-6664-4F4F-9E22-9EDEB552A168}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E42C441-6664-4F4F-9E22-9EDEB552A168}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E42C441-6664-4F4F-9E22-9EDEB552A168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C70486C-7778-47D1-977A-AA4821E04E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C70486C-7778-47D1-977A-AA4821E04E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C70486C-7778-47D1-977A-AA4821E04E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C70486C-7778-47D1-977A-AA4821E04E36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
