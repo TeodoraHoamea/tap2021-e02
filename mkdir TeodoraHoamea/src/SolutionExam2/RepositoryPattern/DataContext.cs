@@ -9,6 +9,7 @@ namespace RepositoryPattern
 {
     public class DataContext : DbContext, IUnitOfWork, IDataRepository
     {
+        public SampleModel sample { get; protected set; }
         public void Commit()
         {
             SaveChanges();
